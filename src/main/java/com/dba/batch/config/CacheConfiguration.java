@@ -42,6 +42,8 @@ public class CacheConfiguration {
             createCache(cm, com.dba.batch.domain.User.class.getName());
             createCache(cm, com.dba.batch.domain.Authority.class.getName());
             createCache(cm, com.dba.batch.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.dba.batch.domain.BatchFile.class.getName());
+            createCache(cm, com.dba.batch.domain.BatchParams.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
