@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="batchParams">
+            <h2><span jhiTranslate="batchApplicationApp.batchParams.detail.title">Batch Params</span> {{batchParams.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="batchApplicationApp.batchParams.param">Param</span></dt>
+                <dd>
+                    <span>{{batchParams.param}}</span>
+                </dd>
+                <dt><span jhiTranslate="batchApplicationApp.batchParams.required">Required</span></dt>
+                <dd>
+                    <span>{{batchParams.required}}</span>
+                </dd>
+                <dt><span jhiTranslate="batchApplicationApp.batchParams.paramName">Param Name</span></dt>
+                <dd>
+                    <span>{{batchParams.paramName}}</span>
+                </dd>
+                <dt><span jhiTranslate="batchApplicationApp.batchParams.batchFile">Batch File</span></dt>
+                <dd>
+                    <div *ngIf="batchParams.batchFile">
+                        <a [routerLink]="['/batch-file', batchParams.batchFile?.id, 'view']">{{batchParams.batchFile?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/batch-params', batchParams.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
