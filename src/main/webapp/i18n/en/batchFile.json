@@ -1,0 +1,24 @@
+{
+  "batchApplicationApp": {
+    "batchFile": {
+      "home": {
+        "title": "Batch Files",
+        "createLabel": "Create a new Batch File",
+        "createOrEditLabel": "Create or edit a Batch File",
+        "notFound": "No Batch Files found"
+      },
+      "created": "A new Batch File is created with identifier {{ param }}",
+      "updated": "A Batch File is updated with identifier {{ param }}",
+      "deleted": "A Batch File is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Batch File {{ id }}?"
+      },
+      "detail": {
+        "title": "Batch File"
+      },
+      "batchName": "Batch Name",
+      "path": "Path",
+      "batchParams": "Batch Params"
+    }
+  }
+}

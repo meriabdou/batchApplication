@@ -1,0 +1,36 @@
+{
+    "name": "BatchParams",
+    "fields": [
+        {
+            "fieldName": "param",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "required",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "paramName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "batchFile",
+            "otherEntityRelationshipName": "batchParams",
+            "relationshipName": "batchFile",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191225132310",
+    "entityTableName": "batch_params",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
