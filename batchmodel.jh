@@ -1,0 +1,28 @@
+
+
+
+entity BatchFile {
+	id Long,
+    batchName String,
+    path String
+    
+}
+
+entity BatchParams {
+	id Long,
+    param String,
+    required Int,
+    paramName String
+    
+}
+
+
+relationship OneToMany {
+	BatchFile{params} to BatchParams,
+	
+}
+
+relationship ManyToOne {
+	BatchParams{batchFile} to BatchFile
+}
+
