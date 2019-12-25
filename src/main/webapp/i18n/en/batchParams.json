@@ -1,0 +1,25 @@
+{
+  "batchApplicationApp": {
+    "batchParams": {
+      "home": {
+        "title": "Batch Params",
+        "createLabel": "Create a new Batch Params",
+        "createOrEditLabel": "Create or edit a Batch Params",
+        "notFound": "No Batch Params found"
+      },
+      "created": "A new Batch Params is created with identifier {{ param }}",
+      "updated": "A Batch Params is updated with identifier {{ param }}",
+      "deleted": "A Batch Params is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Batch Params {{ id }}?"
+      },
+      "detail": {
+        "title": "Batch Params"
+      },
+      "param": "Param",
+      "required": "Required",
+      "paramName": "Param Name",
+      "batchFile": "Batch File"
+    }
+  }
+}
