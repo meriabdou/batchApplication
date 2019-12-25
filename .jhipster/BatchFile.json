@@ -1,0 +1,38 @@
+{
+    "name": "BatchFile",
+    "fields": [
+        {
+            "fieldName": "batchName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "path",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "batchParams",
+            "otherEntityRelationshipName": "batchFile",
+            "relationshipName": "batchParams"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "batchParams",
+            "otherEntityRelationshipName": "batchFile",
+            "relationshipName": "batchParams",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191225132726",
+    "entityTableName": "batch_file",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
